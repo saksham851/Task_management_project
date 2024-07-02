@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Task Management App</h1>
+    <button id="addTaskButton">Add Task</button>
+  </header>
+  <main>
+    <section id="taskList">
+      <!-- Task list will be populated dynamically -->
+    </section>
+    <section id="taskDetails" class="hidden">
+      <h2>Task Details</h2>
+      <form id="taskForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="dueDate">Due Date:</label><br>
+        <input type="date" id="dueDate" name="dueDate"><br>
+        <button type="submit" id="saveTaskButton">Save</button>
+        <button type="button" id="cancelButton">Cancel</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
